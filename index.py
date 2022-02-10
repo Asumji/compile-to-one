@@ -2,7 +2,7 @@
 data = ["data1.txt", "data2.txt", "data3.txt"]
 
 full_data = ""
-for i in range(8):
+for i in range(len(data)):
     with open(data[i], "r") as f:
         readData = f.read()
         print("\n" + data[i] + "\n" + readData)
